@@ -105,7 +105,6 @@ class FormDateSelect extends AbstractFormDateSelect
      * Create a key => value options for days
      *
      * @param  string $pattern Pattern to use for days
-     * @return array
      */
     protected function getDaysOptions(string $pattern): array
     {

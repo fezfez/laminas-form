@@ -31,8 +31,6 @@ final class Options
 
     /**
      * Retrieve the options
-     *
-     * @return array
      */
     public function getOptions(): array
     {

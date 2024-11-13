@@ -67,8 +67,6 @@ abstract class AbstractFormDateSelect extends AbstractHelper
 
     /**
      * Parse the pattern
-     *
-     * @return array
      */
     protected function parsePattern(bool $renderDelimiters = true): array
     {
@@ -171,7 +169,6 @@ abstract class AbstractFormDateSelect extends AbstractHelper
      * Create a key => value options for months
      *
      * @param string $pattern Pattern to use for months
-     * @return array
      */
     protected function getMonthsOptions(string $pattern): array
     {

@@ -2112,9 +2112,6 @@ final class FormTest extends TestCase
         self::assertEquals($expectedFormData, $formData);
     }
 
-    /**
-     * @return array
-     */
     public static function formWithSelectMultipleAndEmptyUnselectedValueDataProvider(): array
     {
         return [

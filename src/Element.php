@@ -128,8 +128,6 @@ class Element implements
 
     /**
      * Get defined options
-     *
-     * @return array
      */
     public function getOptions(): array
     {
@@ -324,8 +322,6 @@ class Element implements
 
     /**
      * Get label specific options
-     *
-     * @return array
      */
     public function getLabelOptions(): array
     {
@@ -346,7 +342,6 @@ class Element implements
     /**
      * Remove many attributes at once
      *
-     * @param array $keys
      * @return $this
      */
     public function removeLabelOptions(array $keys)

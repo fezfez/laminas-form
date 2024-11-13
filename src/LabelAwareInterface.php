@@ -44,8 +44,6 @@ interface LabelAwareInterface
 
     /**
      * Get label specific options
-     *
-     * @return array
      */
     public function getLabelOptions(): array;
 
@@ -80,7 +78,6 @@ interface LabelAwareInterface
     /**
      * Remove many attributes at once
      *
-     * @param  array $keys
      * @return $this
      */
     public function removeLabelOptions(array $keys);

@@ -152,7 +152,6 @@ class FormSelect extends AbstractHelper
      * )
      * </code>
      *
-     * @param  array $options
      * @param  array $selectedOptions Option values that should be marked as selected
      */
     public function renderOptions(array $options, array $selectedOptions = []): string
@@ -227,9 +226,6 @@ class FormSelect extends AbstractHelper
      * See {@link renderOptions()} for the options specification. Basically,
      * an optgroup is simply an option that has an additional "options" key
      * with an array following the specification for renderOptions().
-     *
-     * @param  array $optgroup
-     * @param  array $selectedOptions
      */
     public function renderOptgroup(array $optgroup, array $selectedOptions = []): string
     {
@@ -262,8 +258,6 @@ class FormSelect extends AbstractHelper
      * a domain issue -- you cannot have multiple options selected unless the
      * multiple attribute is present and enabled.
      *
-     * @param  array $attributes
-     * @return array
      * @throws Exception\DomainException
      */
     protected function validateMultiValue(mixed $value, array $attributes): array

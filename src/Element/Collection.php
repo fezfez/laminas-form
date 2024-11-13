@@ -267,8 +267,6 @@ class Collection extends Fieldset
     /**
      * Bind values to the object
      *
-     * @param array $values
-     * @param array $validationGroup
      * @return array|mixed|void
      */
     public function bindValues(array $values = [], ?array $validationGroup = null)
@@ -476,7 +474,6 @@ class Collection extends Fieldset
     }
 
     /**
-     * @return array
      * @throws Exception\InvalidArgumentException
      * @throws InvalidArgumentException
      * @throws Exception\DomainException

@@ -199,8 +199,6 @@ class FormDateTimeSelect extends AbstractFormDateSelect
 
     /**
      * Parse the pattern
-     *
-     * @return array
      */
     protected function parsePattern(bool $renderDelimiters = true): array
     {
@@ -257,7 +255,6 @@ class FormDateTimeSelect extends AbstractFormDateSelect
      * Create a key => value options for days
      *
      * @param  string $pattern Pattern to use for days
-     * @return array
      */
     protected function getDaysOptions(string $pattern): array
     {
@@ -287,7 +284,6 @@ class FormDateTimeSelect extends AbstractFormDateSelect
      * Create a key => value options for hours
      *
      * @param  string $pattern Pattern to use for hours
-     * @return array
      */
     protected function getHoursOptions(string $pattern): array
     {
@@ -317,7 +313,6 @@ class FormDateTimeSelect extends AbstractFormDateSelect
      * Create a key => value options for minutes
      *
      * @param  string $pattern Pattern to use for minutes
-     * @return array
      */
     protected function getMinutesOptions(string $pattern): array
     {
@@ -347,7 +342,6 @@ class FormDateTimeSelect extends AbstractFormDateSelect
      * Create a key => value options for seconds
      *
      * @param  string $pattern Pattern to use for seconds
-     * @return array
      */
     protected function getSecondsOptions(string $pattern): array
     {

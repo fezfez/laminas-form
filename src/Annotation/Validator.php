@@ -74,8 +74,6 @@ final class Validator
 
     /**
      * Retrieve the validator specification
-     *
-     * @return array
      */
     public function getValidatorSpecification(): array
     {

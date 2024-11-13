@@ -35,8 +35,6 @@ trait LabelAwareTrait
 
     /**
      * Get the attributes to use with the label
-     *
-     * @return array
      */
     public function getLabelAttributes(): array
     {
@@ -61,8 +59,6 @@ trait LabelAwareTrait
 
     /**
      * Get label specific options
-     *
-     * @return array
      */
     public function getLabelOptions(): array
     {

@@ -58,8 +58,6 @@ final class Hydrator
 
     /**
      * Retrieve the hydrator specification
-     *
-     * @return array
      */
     public function getHydratorSpecification(): array
     {

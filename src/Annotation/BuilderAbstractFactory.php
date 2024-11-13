@@ -72,8 +72,6 @@ final class BuilderAbstractFactory implements AbstractFactoryInterface
      * array if not found or not an array.
      *
      * Otherwise, returns the `form_annotation_builder` array.
-     *
-     * @return array
      */
     private function marshalConfig(ContainerInterface $container): array
     {
@@ -96,7 +94,6 @@ final class BuilderAbstractFactory implements AbstractFactoryInterface
      * - if the fetched instance is not a `ListenerAggregate`, raises an exception
      * - otherwise attaches it to the event manager
      *
-     * @param  array $config
      * @throws ServiceNotCreatedException If any listener is not an event listener aggregate.
      */
     private function injectListeners(array $config, EventManagerInterface $events, ContainerInterface $container): void

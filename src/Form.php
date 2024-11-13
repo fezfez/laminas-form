@@ -134,7 +134,6 @@ class Form extends Fieldset implements FormInterface
      * Set options for a form. Accepted options are:
      * - prefer_form_input_filter: is form input filter is preferred?
      *
-     * @param  iterable $options
      * @return $this
      * @throws Exception\InvalidArgumentException
      */
@@ -163,7 +162,6 @@ class Form extends Fieldset implements FormInterface
      * the element or fieldset, order in which to prioritize it, etc.
      *
      * @param  array|Traversable|ElementInterface $elementOrFieldset
-     * @param  array                              $flags
      * @return $this
      */
     public function add($elementOrFieldset, array $flags = [])
@@ -312,8 +310,6 @@ class Form extends Fieldset implements FormInterface
 
     /**
      * Bind values to the bound object
-     *
-     * @param  array $values
      */
     public function bindValues(array $values = [], ?array $validationGroup = null): void
     {
@@ -355,8 +351,6 @@ class Form extends Fieldset implements FormInterface
 
     /**
      * Parse filtered values and return only posted fields for binding
-     *
-     * @return array
      */
     protected function prepareBindData(array $values, array $match): array
     {
@@ -883,8 +877,6 @@ class Form extends Fieldset implements FormInterface
 
     /**
      * Recursively extract values for elements and sub-fieldsets
-     *
-     * @return array
      */
     protected function extract(): array
     {

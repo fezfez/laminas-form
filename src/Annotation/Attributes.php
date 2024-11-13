@@ -29,8 +29,6 @@ final class Attributes
 
     /**
      * Retrieve the attributes
-     *
-     * @return array
      */
     public function getAttributes(): array
     {
