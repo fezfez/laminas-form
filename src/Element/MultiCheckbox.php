@@ -170,8 +170,6 @@ class MultiCheckbox extends Checkbox
 
     /**
      * Get only the values from the options attribute
-     *
-     * @return array
      */
     protected function getValueOptionsValues(): array
     {

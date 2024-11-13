@@ -94,9 +94,6 @@ final class FormInputTest extends AbstractCommonTestCase
         $this->$assertion($expected, $markup);
     }
 
-    /**
-     * @return array
-     */
     public static function validAttributes(): array
     {
         return [

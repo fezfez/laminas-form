@@ -80,8 +80,6 @@ final class ComposedObject
 
     /**
      * Retrieve the options for the composed object
-     *
-     * @return array
      */
     public function getOptions(): array
     {

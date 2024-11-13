@@ -37,8 +37,6 @@ interface ElementInterface
 
     /**
      * get the defined options
-     *
-     * @return array
      */
     public function getOptions(): array;
 

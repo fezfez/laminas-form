@@ -47,9 +47,6 @@ class Select extends Element implements InputProviderInterface
     /** @var string */
     protected $unselectedValue = '';
 
-    /**
-     * @return array
-     */
     public function getValueOptions(): array
     {
         return $this->valueOptions;
@@ -299,8 +296,6 @@ class Select extends Element implements InputProviderInterface
 
     /**
      * Get only the values from the options attribute
-     *
-     * @return array
      */
     protected function getValueOptionsValues(): array
     {

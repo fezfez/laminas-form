@@ -139,7 +139,6 @@ class Fieldset extends Element implements FieldsetInterface
      *
      * @todo   Should we detect if the element/fieldset name conflicts?
      * @param  array|Traversable|ElementInterface $elementOrFieldset
-     * @param  array                              $flags
      * @return $this
      * @throws Exception\InvalidArgumentException
      */
@@ -347,7 +346,6 @@ class Fieldset extends Element implements FieldsetInterface
     /**
      * Recursively populate values of attached elements and fieldsets
      *
-     * @param  iterable $data
      * @throws Exception\InvalidArgumentException
      */
     public function populateValues(iterable $data): void
@@ -535,7 +533,6 @@ class Fieldset extends Element implements FieldsetInterface
     /**
      * Bind values to the bound object
      *
-     * @param  array      $values
      * @param  array|null $validationGroup
      * @return mixed
      */
@@ -603,8 +600,6 @@ class Fieldset extends Element implements FieldsetInterface
 
     /**
      * Extract values from the bound object
-     *
-     * @return array
      */
     protected function extract(): array
     {

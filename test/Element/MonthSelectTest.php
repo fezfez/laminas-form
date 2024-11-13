@@ -39,8 +39,6 @@ final class MonthSelectTest extends TestCase
     /**
      * Note about those tests: 2012-1 is not valid in HTML5 validation, but here we use selects, and in some
      * locales, the month may be expressed using only 1 digit, so this is valid here
-     *
-     * @return array
      */
     public static function monthValuesDataProvider(): array
     {

@@ -30,8 +30,6 @@ final class ValidationGroup
 
     /**
      * Retrieve the options
-     *
-     * @return array
      */
     public function getValidationGroup(): array
     {

@@ -36,7 +36,6 @@ class FormElementErrors extends AbstractHelper
      * @template T as null|ElementInterface
      * @psalm-param T $element
      * @psalm-return (T is null ? self : string)
-     * @param  array $attributes
      * @return string|FormElementErrors
      */
     public function __invoke(?ElementInterface $element = null, array $attributes = [])
@@ -55,7 +54,6 @@ class FormElementErrors extends AbstractHelper
      * composed, messages retrieved from the element will be translated; if
      * either is not the case, they will not.
      *
-     * @param  array $attributes
      * @throws Exception\DomainException
      */
     public function render(ElementInterface $element, array $attributes = []): string
@@ -106,8 +104,6 @@ class FormElementErrors extends AbstractHelper
 
     /**
      * Get the attributes that will go on the message open format
-     *
-     * @return array
      */
     public function getAttributes(): array
     {
@@ -182,9 +178,6 @@ class FormElementErrors extends AbstractHelper
         return $this;
     }
 
-    /**
-     * @return array
-     */
     private function flattenMessages(array $messages): array
     {
         return $this->translateErrorMessages && $this->getTranslator()
@@ -192,9 +185,6 @@ class FormElementErrors extends AbstractHelper
             : $this->flattenMessagesWithoutTranslator($messages);
     }
 
-    /**
-     * @return array
-     */
     private function flattenMessagesWithoutTranslator(array $messages): array
     {
         $messagesToPrint = [];
@@ -204,9 +194,6 @@ class FormElementErrors extends AbstractHelper
         return $messagesToPrint;
     }
 
-    /**
-     * @return array
-     */
     private function flattenMessagesWithTranslator(array $messages): array
     {
         $translator      = $this->getTranslator();

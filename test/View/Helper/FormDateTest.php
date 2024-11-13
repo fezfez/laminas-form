@@ -46,9 +46,6 @@ final class FormDateTest extends AbstractCommonTestCase
         self::assertStringContainsString('type="date"', $markup);
     }
 
-    /**
-     * @return array
-     */
     public static function validAttributes(): array
     {
         return [

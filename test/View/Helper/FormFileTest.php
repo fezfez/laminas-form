@@ -74,9 +74,6 @@ final class FormFileTest extends AbstractCommonTestCase
         self::assertStringNotContainsString('value="', $markup);
     }
 
-    /**
-     * @return array
-     */
     public static function validAttributes(): array
     {
         return [

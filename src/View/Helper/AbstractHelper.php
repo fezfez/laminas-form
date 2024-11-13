@@ -243,8 +243,6 @@ abstract class AbstractHelper extends BaseAbstractHelper
      * Create a string of all attribute/value pairs
      *
      * Escapes all attribute values
-     *
-     * @param  array $attributes
      */
     public function createAttributesString(array $attributes): string
     {
@@ -382,9 +380,6 @@ abstract class AbstractHelper extends BaseAbstractHelper
      * but no "id", sets the latter to the former).
      *
      * Removes any invalid attributes
-     *
-     * @param  array $attributes
-     * @return array
      */
     protected function prepareAttributes(array $attributes): array
     {

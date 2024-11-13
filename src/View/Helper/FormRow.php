@@ -264,8 +264,6 @@ class FormRow extends AbstractHelper
 
     /**
      * Get the attributes for the row label
-     *
-     * @return array
      */
     public function getLabelAttributes(): array
     {

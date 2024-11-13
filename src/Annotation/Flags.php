@@ -32,8 +32,6 @@ final class Flags
 
     /**
      * Retrieve the flags
-     *
-     * @return array
      */
     public function getFlags(): array
     {

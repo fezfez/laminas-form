@@ -27,7 +27,6 @@ interface FieldsetInterface extends
      *                                                               ElementInterface; however, keeping it flexible
      *                                                               to allow a factory-based form
      *                                                               implementation as well
-     * @param  array $flags
      * @return $this
      */
     public function add($elementOrFieldset, array $flags = []);

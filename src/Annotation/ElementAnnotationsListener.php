@@ -389,7 +389,6 @@ final class ElementAnnotationsListener extends AbstractAnnotationsListener
     /**
      * @param array|ArrayAccess      $elementSpec
      * @param ComposedObject|Options $annotation
-     * @return array
      */
     private function mergeOptions($elementSpec, $annotation): array
     {

@@ -67,8 +67,6 @@ final class Filter
 
     /**
      * Retrieve the filter specification
-     *
-     * @return array
      */
     public function getFilterSpecification(): array
     {

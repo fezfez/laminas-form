@@ -66,8 +66,6 @@ final class FormAbstractServiceFactory implements AbstractFactoryInterface
 
     /**
      * Get forms configuration, if any
-     *
-     * @return array
      */
     protected function getConfig(ContainerInterface $container): array
     {
@@ -119,8 +117,6 @@ final class FormAbstractServiceFactory implements AbstractFactoryInterface
      *   retrieves it and resets the specification to the instance.
      * - otherwise, pulls the input filter factory from the form factory, and
      *   attaches the FilterManager and ValidatorManager to it.
-     *
-     * @param array $config
      */
     protected function marshalInputFilter(array &$config, ContainerInterface $container, Factory $formFactory): void
     {
